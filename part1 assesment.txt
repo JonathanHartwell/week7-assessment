@@ -1,0 +1,21 @@
+﻿Extra large
+	large
+	medium
+	small
+	xsmall
+	insert
+	859.8701ms
+	7.1336ms
+	155.2us
+	41.7us
+	32.7us
+	append
+	2.3575ms
+	427.3us
+	120.1us
+	83.1us
+	83.3us
+	
+
+1. With a smaller array the insert function is faster but after a medium array it gets exponentially slower than the append function. I Think the append function is the safer function to use over all because if it is slower we are only talking microseconds vs potentially actual seconds for the insert function.
+2. Using unshift will put a new item at the beginning of the array, then it must change the index for all of the items following in that array. The more items the longer it will take.
